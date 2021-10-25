@@ -64,7 +64,7 @@ This is the first step in initialising our network. This POST route requires the
 
 2). `/voting`
 
-    This is a GET route to begin the voting process. Here in our case, only the primary node has the authority to conduct voting among all the other nodes who have stake. All other nodes who do not have access to conduct voting will receive error message. The endpoint sends the voting results to the primary node. The JSON response consists of the address of the node, stake of the node and the value of (stake x votes) of that node.
+This is a GET route to begin the voting process. Here in our case, only the primary node has the authority to conduct voting among all the other nodes who have stake. All other nodes who do not have access to conduct voting will receive error message. The endpoint sends the voting results to the primary node. The JSON response consists of the address of the node, stake of the node and the value of (stake x votes) of that node.
 
 Voting results showing address, stake and (votes x stake) of all participating nodes
 ![Voting](./images/voting.png)
@@ -74,25 +74,26 @@ Nodes apart from the primary node will receive an error as they are not eligible
 
 3). `/delegates/show`
 
-    This is a GET route to fetch and view all the delegates selected for mining by the voting process to the primary node. 
+This is a GET route to fetch and view all the delegates selected for mining by the voting process to the primary node. 
 
 ![Show delegates](./images/delegates_show.png)
 
 4). `/delegates/sync`
 
-    This is a GET endpoint which is required by all other nodes in the network apart from primary node to fetch the list of validator nodes.
+This is a GET endpoint which is required by all other nodes in the network apart from primary node to fetch the list of validator nodes.
 
 ![Sync delegates](./images/delegates_sync.png)
 
 5). `/transactions/new`
 
-    This POST method initiates a new transaction and requires the user to enter the customer name, item name and total billing amount in JSON format.
+This POST method initiates a new transaction and requires the user to enter the customer name, item name and total billing amount in JSON format.
 
 ![New transaction](./images/transaction.png)
 
 6). `/mine`
 
-    This GET endpoint facilitates validating transactions and mining new blocks. However, here, only validator nodes can mine new blocks as per the DPoS consensus stated above. Also the delegate node can mine a new block only when ther are atleast 2 unverified transactions in the pool. This ensures that no block goes under-filled.
+This GET endpoint facilitates validating transactions and mining new blocks. However, here, only validator nodes can mine new blocks as per the DPoS consensus stated above. Also the delegate node can mine a new block only when ther are atleast 2 unverified transactions in the pool. This ensures that no block goes under-filled.
+
 Suppose a non-delegate node tries to mine a new block, it will receive this error.
 ![Mine error](./images/error_mine.png)
 
@@ -101,7 +102,6 @@ There must be >=2 transactions in a block
 
 Structure of a typical block mined by a delegated node
 ![Block structure](./images/block.png)
-
 
 7). `/chain`
 
