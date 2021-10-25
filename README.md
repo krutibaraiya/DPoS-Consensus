@@ -105,13 +105,13 @@ Structure of a typical block mined by a delegated node
 
 7). `/chain`
 
-    This GET method facilitates the user to view the entire blockchain along with its length.
+This GET method facilitates the user to view the entire blockchain along with its length.
 
 ![Blockchain](./images/chain.png)
 
 8). `/chain/resolve`
 
-    This endpoint finds the longest validated chain by checking all the neighbouring nodes in the network and resolves conflict if any.
+This endpoint finds the longest validated chain by checking all the neighbouring nodes in the network and resolves conflict if any.
 
 
 ## Tech stack 
