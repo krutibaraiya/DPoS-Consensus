@@ -59,7 +59,7 @@ Here, in DPoS ,user's vote weight is proportional to their stake rather than blo
 
 1). `/nodes/add`
 
-    This is the first step in initialising our network. This POST route requires the user to enter the URLs of the nodes to be added to the network along with their stake one by one. Make sure to run this endpoint from all ports before begining any transactions with the blockchain.
+This is the first step in initialising our network. This POST route requires the user to enter the URLs of the nodes to be added to the network along with their stake one by one. Make sure to run this endpoint from all ports before begining any transactions with the blockchain.
 ![Nodes add](./images/add_nodes.png)
 
 2). `/voting`
