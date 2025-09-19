@@ -1,9 +1,4 @@
-# Blockchain Assignment - 2
-
-## Team members - (Group 15)
-1) [Baraiya Kruti Harshadkumar](https://github.com/krutibaraiya) (2019A7PS1260H)
-2) [Vedansh Srivastava](https://github.com/vedansh-srivastava) (2019A7PS0323H)
-3) [Umang Agarwal](https://github.com/UmangAgarwal17) (2019A7PS0185H)
+# DPoS consenus algorithm
 
 ## Objective
 * This assignment is in continuation to our previous assignment where we had implemented a simple multi-node Blockchain for Dexter's coffee shop in Python-Flask.
@@ -133,5 +128,6 @@ This endpoint finds the longest validated chain by checking all the neighbouring
     * `python3 main.py -p 5002`
 
 3) Run the API endpoints on an HTTP Client like [Postman](https://www.postman.com/downloads/).
+
 
 
